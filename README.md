@@ -1,24 +1,29 @@
 A large company with locations in different cities has taken an OOP approach in creating an administration program that manages all aspects of its business. These aspects include:
-
 ·the sale of all the different products that the company manages
-
 ·the salaries for managers, office staff and sales personnel.
 
- 
-
 1.(a) By making use of an example from the above scenario, distinguish between a class and an instantiation of a class. (3 points)
+- Class is used for creating an object as a template which can provide initial value of variable in an object and also implement methods. When a specific class is available, we can initialize or instantiate the class in the main function. It also means that we are declaring the object in the main function. 
+- An example can be taken from the above scenario is to manage the sale of all the different products. In here, we can create a class named `Sale` that can store the detail of the `price`, `name`, `sold`, and `quantity`. Other than that, we can also implement methods 'totalSale'. Let's say the formula for total sale is (sold * price) for now. In here, we can implement the formula in the totalSale methods, and return the value. After declaring the methods and the variable, we can instantiate the class in the main by declaring the object's variable such as 'Sale sale = new Sale(1000, "Pencil", 
+50, 100);'. After that, calling the methods inside a class is now possible by typing this code 'sale.totalSale();'. We do not need to give parameters to the totalSale methods since it is already declared in the previous code.
+- Another example can be taken from the above scenario is to define the salaries for managers, office staff and sales personnel. First of all, we need to create a class named `Employee` where it has variables of `names`, `jobPosition`, `id`. Let's say that manager earn 50k per month, office staff earn 35k and sales personnel earn 20k per month. We can create a method called `printSalary` which contains the if function which can define the salary by checking the employee position and return the correct salary value. After that, we can initialize the class in the main class by typing this code `Employee employee = new Employee('Budi', 'manager', '001');`. Lastly, we can call the method by `employee.printSalary();`.
 
 The different modules in the program each open a graphical user interface (GUI). Each GUI has a similar design but contains differences specific to each module.
 
-(b) By giving two examples, explain how the principles of inheritance can be incorporated into the design of this administration program. (4 points)
+(b) public class Nahida extends Character {
+
+} (4 points)
+Inheritance means that we are deriving a class from another class for a hierarchy of classes that share a set of attributes and methods and usually we use the `extends` to define the parent class. Thus, when a subclass need the details or methods from the parent class, we can use this 
+`public subClass extends parentClass{
+...
+}`
+- An example can be taken from second scenario from the above which include the employee positions. We can create the main class as the `Employee` and the other subclasses which are the employee positions such as `manager`, `staff` and `personnel`. Then we can inherit the subclass to the main class by doing these `public class manager extends Employee{}`, `public class staff extends Employee{}`, `public class personnel extends Employee{}`.
+- Another example that is related to the administration program where we need to create an GUI which needs to be inherited from a library called Java Swing such as `public class GUI extends JFrame{}`. 
 
 (c) Describe how the use of libraries can facilitate the development of programs like this company’s administration program. (3 points)
-
-
+- Libraries are really useful for company's administration program. This is because Libraries contain built in functions that would save time and mostly it is bug free and allow more option for the admin program. An example can be taken from the number 2 second example, where it used the library to create a GUI so the application will be user-friendly.
 
 2. The company employs several sales personnel to sell its products to different retailers. Each branch of the company keeps track of its own sales with a suite of programs that include the two classes SalesPerson and Sales.
-
- 
 
 public class SalesPerson {
 
