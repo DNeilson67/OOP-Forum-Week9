@@ -143,7 +143,7 @@ public int getQuantity() {return quantity;}
 (c) (i) Construct unified modelling language (UML) diagrams to clearly show the relationship between the SalesPerson and Sales classes.
 
 Note: There is no need to include mutator or accessor methods or a constructor. (4 points)
-![alt text](Screenshot 2023-05-15 225900.png)
+![alt text](https://github.com/DNeilson67/OOP-Forum-Week9/blob/main/Screenshot%202023-05-15%20225900.png)
 
 (c) (ii) Outline a negative effect that a future change in the design of the Sales object might have on this suite of programs. (2 points)
 
